@@ -1,0 +1,26 @@
+{
+  "name": "bot-telegram",
+  "version": "1.0.0",
+  "description": "Bot para o Telegram",
+  "main": "/src/bot.js",
+  "scripts": {
+    "start:dev": "node --trace-warnings --watch ./src/bot.min.js",
+    "start": "pm2 start src/bot.js -i 1 --name BOT-Telegram",
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "Alexandre Jr",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "fs": "^0.0.1-security",
+    "json-server": "^1.0.0-beta.1",
+    "puppeteer": "^22.15.0",
+    "telegraf": "^3.40.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
